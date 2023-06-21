@@ -45,6 +45,11 @@
     font-size: 1.1rem;
 }
 
+
+.navItem a:hover{
+    border-left: 20px solid #5E0B15;
+}
+
 @media (max-width: 868px) {
     .navItem a{
         font-size: 0.7rem;
@@ -52,10 +57,9 @@
     .logo {
         font-size: 1.5rem;
     }
-}
-
-.navItem a:hover{
-    border-left: 20px solid #5E0B15;
+    .navItem a:hover{
+        border-left: 10px solid #5E0B15;
+    }
 }
 
 .cartDiv{
