@@ -1,0 +1,20 @@
+.cartIcon{
+    font-size: 2rem;
+    color: white;
+}
+
+.cartDiv:hover{
+    cursor: pointer;
+}
+
+.contadorCart{
+    position: relative;
+    top: -10px;
+    left: -5px;
+    text-align: center;
+    background-color: #D9CAB3;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-weight: 600;
+}

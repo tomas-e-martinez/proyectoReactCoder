@@ -1,0 +1,10 @@
+.itemListContainerDiv{
+text-align: center;
+margin: auto;
+margin-top: 30px;
+width: 75%;
+}
+.itemListContainerP{
+    font-size: 2.2rem;
+    font-weight: 300;
+}
