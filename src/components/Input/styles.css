@@ -1,0 +1,61 @@
+.inputDiv{
+    position: relative;
+    transition: 0.1s all ease-in-out;
+    border-radius: 5px;
+}
+
+.inputDiv:hover{
+    box-shadow: 4px 2px 20px rgb(187, 187, 187);
+}
+
+.inputDiv.active{
+    box-shadow: 4px 2px 20px rgb(97, 97, 97);
+}
+
+.inputDiv.active input{
+    padding: 1.2rem 1rem 0.2rem 1rem;
+}
+
+.inputDiv.active input + label {
+    top: 0.08rem;
+    opacity: 1;
+    color: rgb(131, 131, 131);
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    padding-left: 0.3rem;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    transition: 0.1s all ease-in-out;
+}
+
+.input::-webkit-input-placeholder{
+    color: rgb(153, 153, 153);
+}
+
+.input::-moz-placeholder{
+    color: rgb(153, 153, 153);
+}
+
+.input:-ms-input-placeholder{
+    color: rgb(153, 153, 153);
+}
+
+.labelInput{
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s all ease-in-out;
+}

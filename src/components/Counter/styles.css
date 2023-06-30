@@ -1,0 +1,16 @@
+.divCounter {
+    display: flex;
+  }
+  
+  .divCounter button {
+    aspect-ratio: 1/1;
+    width: 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+  }
+  
+  .divCounter button:hover{
+    cursor:pointer;
+  }
