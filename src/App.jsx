@@ -43,7 +43,7 @@ const inputClass = `inputDiv ${active ? 'active' : ''}`
       <NavBar brand='GuitarStore' seccion1='Inicio' seccion2='Guitarras' seccion3='Amplificadores' seccion4='Pedales y accesorios'/>
       {/* <ItemListContainer greeting='Bienvenido/a a GuitarStore. Aquí podrás encontrar gran variedad de guitarras, amplificadores y accesorios.'/>
       <Counter isValidCounter={isValidCounter} counter={counter} decrementCounter={decrementCounter} incrementCounter={incrementCounter} /> */}
-      <div style={{width: '300px', padding:'1rem'}}>
+      {/* <div style={{width: '300px', padding:'1rem'}}>
         <Input 
           placeholder="Dato"
           id='dato'
@@ -54,7 +54,7 @@ const inputClass = `inputDiv ${active ? 'active' : ''}`
           onBlur={onBlur}
           className={inputClass}
         />
-      </div>
+      </div> */}
     </>
   )
 }

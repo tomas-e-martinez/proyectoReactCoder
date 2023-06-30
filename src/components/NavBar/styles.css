@@ -1,13 +1,20 @@
-.header{
+.header {
+    margin: 10px 5vw 0;
+}
+
+.divHeader{
+    display: flex;
+    justify-content: space-between;
     height: 70px;
     background-color: #90323D;
     border-bottom: 1px solid #5E0B15;
     margin-bottom: 5px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 .nav{
-    display: flex;
     height: 100%;
+    background-color: #313131;
+    border-radius: 4px;
 }
 .logo{
     display: flex;
@@ -25,8 +32,6 @@
 .navUl{
     display: flex;
     height: 100%;
-    flex-basis: 65%;
-    margin-left: auto;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -40,24 +45,22 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #5E0B15;
+    border-left: 1px solid #b4b4b4;
     text-align: center;
     transition: .1s ease-in;
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
+    border-radius: 4px;
 }
 
 
 .navItem a:hover{
-    border-left: 10px solid #5E0B15;
+    border-left: 5px solid ;
 }
 
 @media (max-width: 868px) {
     .navItem a{
         font-size: 0.7rem;
-    }
-    .logo {
-        font-size: 1.5rem;
     }
 }
 
