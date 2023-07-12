@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css';
 import CartWidget from "./CartWidget/CartWidget";
 
-const NavBar = ({brand, seccion1, seccion2, seccion3, seccion4}) => {
+const NavBar = ({brand, sections}) => {
     return (
         <header className="header">
             <div className="divHeader">
@@ -11,10 +11,11 @@ const NavBar = ({brand, seccion1, seccion2, seccion3, seccion4}) => {
             </div>
             <nav className="nav">
                 <ul className="navUl">
-                    <li className="navItem"><a href="#">{seccion1}</a></li>
-                    <li className="navItem"><a href="#">{seccion2}</a></li>
-                    <li className="navItem"><a href="#">{seccion3}</a></li>
-                    <li className="navItem"><a href="#">{seccion4}</a></li>
+                    {sections.map((section, index) => (
+                        <li className="navItem" key={index}>
+                            <a href="#">{section.text}</a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>

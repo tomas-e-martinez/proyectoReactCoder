@@ -13,7 +13,6 @@
 }
 .nav{
     height: 100%;
-    background-color: #313131;
     border-radius: 4px;
 }
 .logo{
@@ -31,38 +30,36 @@
 }
 .navUl{
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
+    border-radius: 4px;
 }
 .navItem{
     height: 100%;
-    flex: 1;
+    margin: 0 10px;
+    padding: 4px 0;
 }
 .navItem a{
-    display: flex;
-    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #b4b4b4;
     text-align: center;
-    transition: .1s ease-in;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.1rem;
-    border-radius: 4px;
+    font-weight: 600;
 }
 
+/* .navItem a:hover{
+    border-bottom: 1px solid black;
+} */
 
-.navItem a:hover{
-    border-left: 5px solid ;
-}
-
-@media (max-width: 868px) {
+/* @media (max-width: 868px) {
     .navItem a{
-        font-size: 0.7rem;
     }
-}
+} */
 
 .cartDiv{
     display: flex;

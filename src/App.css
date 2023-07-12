@@ -18,3 +18,15 @@ ul {
 body {
   background-color: #D9CAB3;
 }
+
+
+.headerCardContainer{
+  margin: 5px 5vw;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.contentContainer{
+  margin: 5px 5vw;
+}

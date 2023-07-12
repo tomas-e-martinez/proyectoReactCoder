@@ -4,14 +4,6 @@
     border-radius: 5px;
 }
 
-.inputDiv:hover{
-    box-shadow: 4px 2px 20px rgb(187, 187, 187);
-}
-
-.inputDiv.active{
-    box-shadow: 4px 2px 20px rgb(97, 97, 97);
-}
-
 .inputDiv.active input{
     padding: 1.2rem 1rem 0.2rem 1rem;
 }
