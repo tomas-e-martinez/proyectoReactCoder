@@ -6,6 +6,9 @@ import Counter from './components/Counter/Counter'
 import Input from './components/Input/Input'
 import Card from './components/Products/Card/Card'
 import ItemDetails from './components/Products/ItemDetails/ItemDetails'
+import { useFetch } from './hooks/useFetch'
+import { API_URLS } from './constants'
+import Loader from './components/Loader/Loader'
 
 
 function App() {
@@ -13,10 +16,11 @@ function App() {
 const [counter, setCounter] = useState(0);
 const [search, setSearch] = useState(false);
 const [active, setActive] = useState(false);
-const [products, setProducts] = useState([]);
 const [showDetails, setShowDetails] = useState(false);
 const [productDetail, setProductDetail] = useState(null);
 const [productFiltered, setProductFiltered] = useState([])
+
+const {data: products, loading, error} = useFetch(API_URLS.PRODUCTS.url, API_URLS.PRODUCTS.config);
 
 const isValidCounter = counter > 0;
 
@@ -77,7 +81,7 @@ const sections = [
 ]
 
 
-useEffect(() => {
+/* useEffect(() => {
   const getProducts = async () => {
     try {
       const response = await fetch('https://6499986279fbe9bcf83f9202.mockapi.io/products', {
@@ -94,7 +98,7 @@ useEffect(() => {
     }
   }
   getProducts();
-}, [])
+}, []) */
 
   return (
     <>
@@ -125,14 +129,16 @@ useEffect(() => {
           </div>
           <h2 className='headerCardContainer'>Productos</h2>
           <div className='cardContainer'>
+            {loading && <Loader/>}
+            {search.length > 0 && productFiltered.length === 0 && <h3>No se encontró el producto</h3>}
             {
               search.length > 0 ? (
                 productFiltered.map((product) => (
-                  <Card {...product} onShowDetails={onShowDetails} />
+                  <Card key={product.id} {...product} onShowDetails={onShowDetails} />
                 ))
               ) : (
               products.map((product) => (
-                <Card {...product} onShowDetails={onShowDetails}/>
+                <Card key={product.id} {...product} onShowDetails={onShowDetails}/>
               ))
               )
             }
