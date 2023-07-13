@@ -6,7 +6,7 @@ const NavBar = ({brand, sections}) => {
     return (
         <header className="header">
             <div className="divHeader">
-                <a className="logo" href="#">{brand}</a>
+                <a className="logo" href="/">{brand}</a>
                 <CartWidget contador='3'/>
             </div>
             <nav className="nav">

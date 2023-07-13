@@ -9,13 +9,22 @@
     border-radius: 4px;
     box-shadow: 0 0.1rem 0.1rem rgb(116, 116, 116);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
-    max-height: 550px;
+    max-height: none;
     justify-content: space-around;
     transition: 0.2s ease-in-out;
-}/* 
+}
+
+@media only screen and (min-width: 750px){
+    .cardDetails{
+        flex-direction: row;
+        max-height: 550px;
+    }
+}
+
+/* 
 .cardDetailsImageContainer{
 
 } */
@@ -30,7 +39,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     min-height: 300px;
+    padding: 0 20px;
 }
 .cardDetailsName{
     font-size: 2rem;

@@ -1,0 +1,36 @@
+.headerDetailsContainer{
+    display: flex;
+    justify-content: center;
+}
+.headerDetailsContainer .backButton{
+    border: none;
+    background-color: #90323D;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    flex-basis: 20;
+
+}
+.headerDetailsContainer .backButton:hover{
+    background-color: #5E0B15;
+    cursor: pointer;
+}
+.headerDetailsCardContainer{
+  font-size: 2rem;
+  flex-basis: 80;
+  margin: auto;
+}
+
+.headerDetailsContainerDiv{
+    margin: 0 5vw;
+}
+
+.loaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+
