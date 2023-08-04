@@ -18,7 +18,7 @@ function Home() {
     const [counter, setCounter] = useState(0);
     const [search, setSearch] = useState(false);
     const [active, setActive] = useState(false);
-    const [showDetails, setShowDetails] = useState(false);
+    const [isFiltered, setIsFiltered] = useState(false);
     const [productDetail, setProductDetail] = useState(null);
     const [productFiltered, setProductFiltered] = useState([])
 
@@ -66,6 +66,12 @@ function Home() {
     }
 
     const inputClass = `inputDiv ${active ? 'active' : ''}`;
+    
+    const onFilter = (name) => {
+      setIsFiltered(true);
+      const productsByCategory = products.filter((product) => product.category === name);
+      setProductFiltered(productsByCategory);
+    }
 
 
   return (
@@ -76,9 +82,14 @@ function Home() {
           <>
             <div className='categoriesContainer'>
                 {loadingCategories && <Loader/>}
+                <button onClick={() => setIsFiltered(false)} type='button' className='categoryContainer'>
+                  <p className='categoryName'>All</p>
+                </button>
                 {
                     categories.map((category) => (
-                        <p key={category.id} className='categoryName'>{category.name}</p>
+                        <button onClick={() => onFilter(category.name)} type='button' key={category.id} className='categoryContainer'>
+                          <p key={category.id} className='categoryName'>{category.name}</p>
+                        </button>
                     )
                     )
                 }
@@ -100,7 +111,7 @@ function Home() {
             {loadingProducts && <Loader/>}
             {search.length > 0 && productFiltered.length === 0 && <h3>No se encontró el producto</h3>}
             {
-              search.length > 0 ? (
+              isFiltered ? (
                 productFiltered.map((product) => (
                   <Card key={product.id} {...product} onShowDetails={onShowDetails} />
                 ))
@@ -109,6 +120,9 @@ function Home() {
                 <Card key={product.id} {...product} onShowDetails={onShowDetails}/>
               ))
               )
+            }
+            {
+              isFiltered && productFiltered.length === 0 && <h2>No se encontraron productos</h2>
             }
           </div>
         </>

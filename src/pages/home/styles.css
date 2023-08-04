@@ -19,7 +19,10 @@
   border-radius: 4px;
   margin-bottom: 5px;
 }
-
+.categoryContainer{
+  border: none;
+  background: none;
+}
 .categoryName{
   height: 100%;
   margin: 0 10px;

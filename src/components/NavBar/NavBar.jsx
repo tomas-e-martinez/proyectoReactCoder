@@ -9,7 +9,7 @@ const NavBar = ({brand, sections}) => {
                 <a className="logo" href="/">{brand}</a>
                 <CartWidget contador='3'/>
             </div>
-            <nav className="nav">
+            {/* <nav className="nav">
                 <ul className="navUl">
                     {sections.map((section, index) => (
                         <li className="navItem" key={index}>
@@ -17,7 +17,7 @@ const NavBar = ({brand, sections}) => {
                         </li>
                     ))}
                 </ul>
-            </nav>
+            </nav> */}
         </header>
     )
 }
