@@ -20,7 +20,6 @@
 }
 .card:hover{
     transform: scale(1.04);
-    cursor: pointer;
 }
 .cardImage{
     width: 260px;
@@ -75,5 +74,12 @@
 }
 .cardButton:hover{
     background-color: #5E0B15;
+    cursor: pointer;
+}
+.cartButtonContainer{
+    border: none;
+    background: none;
+}
+.cartButtonContainer:hover{
     cursor: pointer;
 }
