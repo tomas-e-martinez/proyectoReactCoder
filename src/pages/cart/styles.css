@@ -1,0 +1,37 @@
+.cartContainerMargin {
+    margin: 0 5vw ;
+}
+
+.cartContainer h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cartTotal{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cartDetailActions{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.cartButtonCheckout{
+  border: none;
+  padding: .5rem 2rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: #90323D;
+  color: white;
+}
+
+.cartButtonCheckout:hover{
+    background-color: #5E0B15;
+    cursor: pointer;
+    color: white;
+}

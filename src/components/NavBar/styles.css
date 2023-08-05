@@ -27,6 +27,11 @@
     font-weight: bold;
     color: white;
     font-family: 'Pacifico', cursive;
+    transition: .15s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.05);
 }
 .navUl{
     display: flex;

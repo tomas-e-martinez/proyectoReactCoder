@@ -1,13 +1,14 @@
 import React from "react";
 import './styles.css';
 import CartWidget from "./CartWidget/CartWidget";
+import { NavLink } from "react-router-dom";
 
 const NavBar = ({brand, sections}) => {
     return (
         <header className="header">
             <div className="divHeader">
-                <a className="logo" href="/">{brand}</a>
-                <CartWidget contador='3'/>
+                <NavLink to='/' className="logo">{brand}</NavLink>
+                <CartWidget/>
             </div>
             {/* <nav className="nav">
                 <ul className="navUl">
