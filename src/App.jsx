@@ -5,6 +5,7 @@ import Home from './pages/home'
 import ProductDetails from './pages/product-details'
 import { CartProvider } from './context/cart-context'
 import Cart from './pages/cart'
+import Checkout from './pages/checkout'
 
 function App() {
 
@@ -32,6 +33,7 @@ const sections = [
           <Route path='/' element={<Home />} />
           <Route path='/products/:productId' element={<ProductDetails/>} />
           <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/checkout' element={<Checkout />}></Route>
         </Routes>
       </CartProvider>
     </>

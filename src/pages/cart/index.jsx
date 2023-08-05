@@ -1,9 +1,15 @@
 import { useContext } from 'react'
 import './styles.css'
 import { CartContext } from '../../context/cart-context'
+import { useNavigate } from 'react-router-dom'
 
 function Cart ({ }) {
+    const navigate = useNavigate();
     const {cart, onAddToCart, onDecreaseItem, onRemoveItem, total, getTotalItemQuantity} = useContext(CartContext)
+
+    const onHandlerCheckout = () => {
+      navigate('/checkout');
+    }
     return(
         <div className='cartContainerMargin'>
           <div className='cartContainer'>
@@ -36,7 +42,7 @@ function Cart ({ }) {
                         <p className='cartTotal'>Total: ${total}</p>
                         <p className='cartItemQuantity'>Cantidad de productos: {getTotalItemQuantity()}</p>
                     </div>
-                    <button className='cartButtonCheckout'>Finalizar compra</button>
+                    <button onClick={onHandlerCheckout} className='cartButtonCheckout'>Confirmar compra</button>
                 </div>
               )
             }
