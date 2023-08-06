@@ -1,5 +1,6 @@
-.checkoutContainerMargin {
+.divCheckoutMargin {
     margin: 0 5vw ;
+    text-align: center;
 }
 
 .checkoutContainer{
@@ -11,20 +12,9 @@
     text-align: center;
 }
 
-.checkoutContainer{
+/* .checkoutContainer{
 
 }
 .checkoutTitle{
 
-}
-.checkoutForm{
-    display: flex;
-    flex-direction: column;
-    max-width: 50vw;
-}
-.checkoutFormContainer{
-    padding: 2rem 0;
-}
-.checkoutFormInputGroup{
- padding: 1rem 0;
-}
+} */

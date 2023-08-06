@@ -3,7 +3,7 @@ import CheckoutForm from '../../components/checkoutForm'
 
 function Checkout() {
      return (
-    <div>
+    <div className='divCheckoutMargin'>
       <h1>Checkout</h1>
       <CheckoutForm />
     </div>
