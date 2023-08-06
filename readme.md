@@ -1,0 +1,3 @@
+Este proyecto lo desarrollé en React.js como un simulador de e-commerce. Como tal cuenta con muchas funcionalidades propias de ese tipo de aplicación web: un catálogo de productos, categorías y un carrito, con botones de agregar y eliminar productos del mismo. 
+Para la información de los productos se utilizó mockAPI y como base de datos para el checkout se utilizó Firebase. Al enviar los datos del formulario, se muestra en pantalla el ID de pedido generado por Firebase.
+La navegación entre productos, carrito, home y checkout se logró mediante Router.
